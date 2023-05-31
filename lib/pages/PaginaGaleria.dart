@@ -11,9 +11,19 @@ class PaginaGaleria extends StatelessWidget {
       appBar: AppBar(
         title: Text("Galeria",style: TextStyle(fontFamily: 'Lobster-Regular',fontSize: 25)),
       ),
-      body: Container(
-        child: Center(
-          child: Text("Galeria") ,)
+      body: Center(
+
+        
+        child: ListView(
+          children:[
+            Center(
+              child: Text("Galeria", style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),)
+            )
+             
+          ]
+          
+          
+          ,)
       ),
     );
   }

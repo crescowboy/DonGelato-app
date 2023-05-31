@@ -54,7 +54,7 @@ class Contactanos extends StatelessWidget {
                       decoration:
                        InputDecoration(
                         border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(10),
+                          borderRadius: BorderRadius.circular(7),
                           ),
                         labelText: 'Escribe tus nombres:',
                         
@@ -77,7 +77,7 @@ class Contactanos extends StatelessWidget {
                       textCapitalization: TextCapitalization.sentences,
                       decoration: InputDecoration(
                         border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(10)
+                          borderRadius: BorderRadius.circular(7)
                         ),
                         labelText: 'Escribe tus apellidos:',
                       
@@ -98,7 +98,7 @@ class Contactanos extends StatelessWidget {
                       maxLines: 3,
                       decoration: InputDecoration(
                         border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(10)
+                          borderRadius: BorderRadius.circular(7)
                         ),
                         labelText: 'Mensaje:',
                       
@@ -111,6 +111,9 @@ class Contactanos extends StatelessWidget {
                     child: RaisedButton(
                       padding: EdgeInsets.symmetric(horizontal: 50,),
                       color: Colors.blue,
+                      shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(5.0),
+                      ),
                       child: Text("Enviar", style: TextStyle(fontSize: 17,fontWeight: FontWeight.bold, color: Colors.white),),
                       onPressed: (){
                         
