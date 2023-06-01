@@ -275,6 +275,9 @@ class PaginaHome extends StatelessWidget {
                           padding: EdgeInsets.symmetric(horizontal:5, vertical: 10),
                           color: Colors.blue,
                           textColor: Colors.white,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(9.0)
+                            ),
                           
                           child: Row(
                             
