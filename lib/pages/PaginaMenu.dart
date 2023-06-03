@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+
 class PaginaMenu extends StatelessWidget {
   const PaginaMenu({Key? key}) : super(key: key);
 
@@ -42,25 +43,41 @@ class PaginaMenu extends StatelessWidget {
                    child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                          children: [
-                           Container(
-                            
-                            width: 170,
-                            height: 180,
-                            decoration: BoxDecoration(
-                              
-                              color: Colors.white,
-                              borderRadius: BorderRadius.circular(10),
-                              image: DecorationImage(
-                                 image: AssetImage("assets/affogato.jpg"),
-                                 fit: BoxFit.cover,
-                              ),
-                             
+
+                          GestureDetector(
+                        onTap: () {
+                          showDialog(
+                            context: context,
+                            builder: (_) => ImageModal('assets/affogato.jpg'),
+                          );
+                        },
+                        child: Container(
+                          width: 170,
+                          height: 180,
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(10),
+                            image: DecorationImage(
+                              image: AssetImage("assets/affogato.jpg"),
+                              fit: BoxFit.cover,
                             ),
+                          ),
+                        ),
                       ),
 
                       SizedBox(width: 28,),
 
-                      Container(
+
+                      GestureDetector(
+                        onTap: (){
+                          showDialog(
+                            context: context,
+                             builder: (_) => ImageModal('assets/gelatofruta.jpeg'),
+                             );
+                          
+                        },
+                      
+                      child:Container(
                         
                         width: 170,
                         height: 180,
@@ -74,6 +91,7 @@ class PaginaMenu extends StatelessWidget {
                           ),
                          
                         ),
+                      ),
                       ),
                          ],
                        ),
@@ -89,7 +107,16 @@ class PaginaMenu extends StatelessWidget {
                    child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                          children: [
-                           Container(
+
+                          GestureDetector(
+                            onTap: (){
+                              showDialog(
+                                context: context,
+                                 builder: (_) => ImageModal("assets/chocomodaja.jpg"),
+                                 );
+                            },
+                          
+                           child:Container(
                             
                             width: 170,
                             height: 180,
@@ -104,10 +131,19 @@ class PaginaMenu extends StatelessWidget {
                              
                             ),
                       ),
+                    ),
 
                       SizedBox(width: 28,),
 
-                      Container(
+                      GestureDetector(
+                        onTap: (){
+                          showDialog(context: context,
+                           builder: (_) => ImageModal("assets/panfetti.jpg"),
+                           );
+                        },
+                      
+
+                      child:Container(
                         
                         width: 170,
                         height: 180,
@@ -121,6 +157,7 @@ class PaginaMenu extends StatelessWidget {
                           ),
                          
                         ),
+                      ),
                       ),
                          ],
                        ),
@@ -368,6 +405,36 @@ class PaginaMenu extends StatelessWidget {
           ),
         ),
       ),
+    );
+  }
+}
+
+class ImageModal extends StatelessWidget {
+  final String imagePath;
+
+  const ImageModal(this.imagePath, {Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return AlertDialog(
+      content: Container(
+        width: 400,
+        height: 300,
+        decoration: BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage(imagePath),
+            fit: BoxFit.cover,
+          ),
+        ),
+      ),
+      actions: [
+        TextButton(
+          child: Text('Cerrar'),
+          onPressed: () {
+            Navigator.of(context).pop();
+          },
+        ),
+      ],
     );
   }
 }
