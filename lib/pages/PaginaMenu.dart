@@ -165,13 +165,24 @@ class PaginaMenu extends StatelessWidget {
                ),
 
 
+              
+
                Center(
                  child: Container(
                   padding: EdgeInsets.symmetric(horizontal: 30, vertical: 10),
                    child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                          children: [
-                           Container(
+
+                          GestureDetector(
+                            onTap: (){
+                              showDialog(
+                                context: context,
+                                 builder: (_) => ImageModal("assets/cheesscake.jpg"),
+                                 );
+                            },
+                          
+                           child:Container(
                             
                             width: 170,
                             height: 180,
@@ -186,10 +197,19 @@ class PaginaMenu extends StatelessWidget {
                              
                             ),
                       ),
+                    ),
 
                       SizedBox(width: 28,),
 
-                      Container(
+                      GestureDetector(
+                        onTap: (){
+                          showDialog(context: context,
+                           builder: (_) => ImageModal("assets/churros.jpg"),
+                           );
+                        },
+                      
+
+                      child:Container(
                         
                         width: 170,
                         height: 180,
@@ -204,10 +224,16 @@ class PaginaMenu extends StatelessWidget {
                          
                         ),
                       ),
+                      ),
                          ],
                        ),
                  ),
                ),
+
+
+
+               
+               
 
 
                Center(
@@ -216,7 +242,16 @@ class PaginaMenu extends StatelessWidget {
                    child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                          children: [
-                           Container(
+
+                          GestureDetector(
+                            onTap: (){
+                              showDialog(
+                                context: context,
+                                 builder: (_) => ImageModal("assets/dona.jpg"),
+                                 );
+                            },
+                          
+                           child:Container(
                             
                             width: 170,
                             height: 180,
@@ -231,10 +266,19 @@ class PaginaMenu extends StatelessWidget {
                              
                             ),
                       ),
+                    ),
 
                       SizedBox(width: 28,),
 
-                      Container(
+                      GestureDetector(
+                        onTap: (){
+                          showDialog(context: context,
+                           builder: (_) => ImageModal("assets/Pie.jpeg"),
+                           );
+                        },
+                      
+
+                      child:Container(
                         
                         width: 170,
                         height: 180,
@@ -249,10 +293,15 @@ class PaginaMenu extends StatelessWidget {
                          
                         ),
                       ),
+                      ),
                          ],
                        ),
                  ),
                ),
+
+
+               
+               
 
 
                SizedBox(height: 10,),
@@ -268,7 +317,16 @@ class PaginaMenu extends StatelessWidget {
                    child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                          children: [
-                           Container(
+
+                          GestureDetector(
+                            onTap: (){
+                              showDialog(
+                                context: context,
+                                 builder: (_) => ImageModal("assets/BomBom.jpeg"),
+                                 );
+                            },
+                          
+                           child:Container(
                             
                             width: 170,
                             height: 180,
@@ -283,10 +341,19 @@ class PaginaMenu extends StatelessWidget {
                              
                             ),
                       ),
+                    ),
 
                       SizedBox(width: 28,),
 
-                      Container(
+                      GestureDetector(
+                        onTap: (){
+                          showDialog(context: context,
+                           builder: (_) => ImageModal("assets/capiccino.jpeg"),
+                           );
+                        },
+                      
+
+                      child:Container(
                         
                         width: 170,
                         height: 180,
@@ -301,10 +368,15 @@ class PaginaMenu extends StatelessWidget {
                          
                         ),
                       ),
+                      ),
                          ],
                        ),
                  ),
                ),
+
+
+               
+               
 
 
                Center(
@@ -313,7 +385,16 @@ class PaginaMenu extends StatelessWidget {
                    child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                          children: [
-                           Container(
+
+                          GestureDetector(
+                            onTap: (){
+                              showDialog(
+                                context: context,
+                                 builder: (_) => ImageModal("assets/Mocaccino.jpeg"),
+                                 );
+                            },
+                          
+                           child:Container(
                             
                             width: 170,
                             height: 180,
@@ -328,10 +409,19 @@ class PaginaMenu extends StatelessWidget {
                              
                             ),
                       ),
+                    ),
 
                       SizedBox(width: 28,),
 
-                      Container(
+                      GestureDetector(
+                        onTap: (){
+                          showDialog(context: context,
+                           builder: (_) => ImageModal("assets/gambino.jpeg"),
+                           );
+                        },
+                      
+
+                      child:Container(
                         
                         width: 170,
                         height: 180,
@@ -346,10 +436,15 @@ class PaginaMenu extends StatelessWidget {
                          
                         ),
                       ),
+                      ),
                          ],
                        ),
                  ),
                ),
+
+
+               
+               
 
 
                Center(
@@ -358,7 +453,16 @@ class PaginaMenu extends StatelessWidget {
                    child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                          children: [
-                           Container(
+
+                          GestureDetector(
+                            onTap: (){
+                              showDialog(
+                                context: context,
+                                 builder: (_) => ImageModal("assets/cacho.jpeg"),
+                                 );
+                            },
+                          
+                           child:Container(
                             
                             width: 170,
                             height: 180,
@@ -373,10 +477,19 @@ class PaginaMenu extends StatelessWidget {
                              
                             ),
                       ),
+                    ),
 
                       SizedBox(width: 28,),
 
-                      Container(
+                      GestureDetector(
+                        onTap: (){
+                          showDialog(context: context,
+                           builder: (_) => ImageModal("assets/pancake.jpeg"),
+                           );
+                        },
+                      
+
+                      child:Container(
                         
                         width: 170,
                         height: 180,
@@ -391,15 +504,13 @@ class PaginaMenu extends StatelessWidget {
                          
                         ),
                       ),
-                      
+                      ),
                          ],
                        ),
-                       
                  ),
-                 
                ),
-    
-              
+
+                
               
             ],
           ),
