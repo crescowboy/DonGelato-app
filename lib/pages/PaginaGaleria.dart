@@ -43,15 +43,7 @@ class _PaginaGaleriaState extends State<PaginaGaleria> {
                 child: Image.asset('assets/direccion2.jpg'),
               ),
             ),
-            GestureDetector(
-              onTap: _toggleImageSize2,
-              child: AnimatedContainer(
-                duration: Duration(milliseconds: 300),
-                width: _imageSize2,
-                height: _imageSize2,
-                child: Image.asset("assets/affogato.jpg"),
-              ),
-            ),
+            
           ],
         ),
       ),
