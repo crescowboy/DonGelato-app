@@ -32,7 +32,7 @@ class _PaginaGaleriaState extends State<PaginaGaleria> {
         child: ListView(
           children: [
             Center(
-              child: Text("Galeria", style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold)),
+              child: Text("Galeria", style: TextStyle(fontSize: 35, fontWeight: FontWeight.bold)),
             ),
             GestureDetector(
               onTap: _toggleImageSize1,
