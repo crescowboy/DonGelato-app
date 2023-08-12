@@ -92,20 +92,37 @@ class _inicio2State extends State<inicio2> {
 
                 Row(
                   children: [
-                    Container(
-                      margin: const EdgeInsets.only(top: 30),
-                      color: Colors.grey[100],
-                      padding: const EdgeInsets.all(13),
-                      child: Icon(Icons.home, size: 30,),
+                    // Container(
+                    //   margin: const EdgeInsets.only(top: 30),
+                    //   color: Colors.grey[100],
+                    //   padding: const EdgeInsets.all(13),
+                    //   child: Icon(Icons.home, size: 30,),
                       
-                    ),
+                    // ),
 
                     Container(
-                      margin: const EdgeInsets.only(top: 30),
-                      width: 247,
-                      padding: const EdgeInsets.all(20),
-                      color: Colors.grey[100],
-                      child: Text("Home"),
+                      width: 300,
+                      margin: const EdgeInsets.only(top: 3),
+                      child: FlatButton(
+                        padding: const EdgeInsets.symmetric(horizontal: 13, vertical: 11),
+                        color: Colors.grey[100],
+
+                        child: Row(
+                        children: <Widget>[
+                          Icon(Icons.home, size: 30,),
+                          SizedBox(width: 30,),
+                            Text("Home", style: TextStyle(fontSize: 15, fontWeight: FontWeight.normal),),
+                        ],   
+                      ), 
+
+                        onPressed: (){
+                          Navigator.push(context,
+                          MaterialPageRoute(builder: ((context) => PaginaHome()))
+                          );
+                        },
+                      )
+                      
+                      
                     ),
                   ],
                 ),
