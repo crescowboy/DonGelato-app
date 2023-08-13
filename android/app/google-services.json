@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "919301726451",
+    "project_id": "dongelato-56c16",
+    "storage_bucket": "dongelato-56c16.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:919301726451:android:476b467e96479855965786",
+        "android_client_info": {
+          "package_name": "com.example.don_gelato"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "919301726451-lbspb81j3i4jv146phf6pqb8mdv97ev5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnVL9r1QVUCClXb54pv6bmg7t4BqpVjFo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "919301726451-lbspb81j3i4jv146phf6pqb8mdv97ev5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
